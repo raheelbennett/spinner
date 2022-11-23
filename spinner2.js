@@ -4,10 +4,10 @@
 
 const strArray = ["|", "/", "-", "\\", "|", "/", "-", "\\", "|"];
 let timer = 100;
-for(const each of strArray) {
+for (const each of strArray) {
   setTimeout(() => {
     process.stdout.write(`\r${each}   `);
   }, timer);
   timer += 200;
-};
-setTimeout(() => console.log('\n'), timer); // to switch to new line at the end of the loop 
+}
+setTimeout(() => console.log('\n'), timer); // to switch to new line at the end of the loop
